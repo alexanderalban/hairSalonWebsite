@@ -38,3 +38,10 @@ a:visited {
 a:hover {
     color: rgb(11,163,156);
 }
+
+/*Main Homepage Components*/
+
+#main-stretchy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
