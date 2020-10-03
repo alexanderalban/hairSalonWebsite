@@ -55,7 +55,8 @@ a:hover {
 
 #main-image {
     grid-column: 1 / 3;
-    width: 100vw
+    width: 100vw;
+    min-width: 960px;
 }
 
 #image-text {
@@ -86,6 +87,10 @@ a:hover {
     display: inline-block;
 }
 
+#emphasis {
+    font-style: italic;
+}
+
 #main-link {
     display: inline-block;
     color: white;
@@ -100,6 +105,8 @@ a:hover {
 #main-link:hover {
     background-color: rgb(31,195,188);
 }
+
+/*Bottom Main Homepage Section*/
 
 .hair-description {
     font-family: 'Poller One', cursive;
@@ -124,7 +131,7 @@ a:hover {
     object-fit: cover;
     border: 2px solid #1a1a1a;
     display: block;
-    margin-top: 40px;;
+    margin-top: 40px;
     padding: 0;
     opacity: .8;
 }
@@ -148,6 +155,7 @@ footer {
     color: white;
     display: grid;
     grid-template-columns: 1fr repeat(2, 480px) 1fr;
+    margin-bottom: 25px;
 }
 
 #copyright {
@@ -165,8 +173,8 @@ footer {
 }
 
 .social-icons {
-    height: 44px;
-    width: 44px;
+    height: 41px;
+    width: 41x;
     background-color: white;
     filter: invert(1);
     border: 3px solid black;
@@ -176,4 +184,97 @@ footer {
 .social-icons:hover {
     filter: invert(0);
     border: 3px solid white;
+}
+
+
+@media (max-width: 576px) {
+
+    header {
+        height: 228.75px;
+    }
+
+    /*Home Page Reactive Settings*/
+
+    main {
+        margin: 0, auto;
+        display: grid;
+    }
+
+    #main-stretchy {
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    #main-image {
+        min-height: 373.33px;
+        min-width: 400px;
+        position: relative;
+        grid-column: 1 / 2;
+        object-fit: cover;
+        object-position: 0% 50%;
+    }
+
+    #main-title {
+        font-size: 14px;
+        padding: 8px 5px;
+    }
+
+    #image-text {
+        grid-column: 1 / 2;
+        height: 271px;
+        position: absolute;
+    }
+
+    .main-text {
+        font-size: 14px;
+        margin: 10px 0;
+        padding: 10px;
+        display: block;
+    }
+
+    #main-link {
+        font-size: 14px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    #bottom-image-part {
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+        width: 85%;
+        justify-self: center;
+    }
+
+    #bottom-wrapper1 {
+        grid-column: 1 / 2;
+    }
+
+    .main-bottom-images {
+        height: auto;
+        width: auto;
+        max-height: auto;
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .hair-description {
+        margin-bottom: 0;
+    }
+
+    /*Footer Reactive Settings*/
+
+    footer{
+        grid-template-columns: 1fr;
+    }
+
+    #copyright {
+        grid-column: 1 / 2;
+        justify-self: center;
+    }
+
+    #footer-icons {
+        grid-column: 1 / 2;
+        justify-self: center ;
+    }
 }
