@@ -1,0 +1,40 @@
+/*Header Components*/
+
+header {
+    height: 260px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    display:grid;
+}
+
+h1 {
+    grid-column: 2/ 3;
+    text-align: center;
+    align-self: end;
+    font-size: 50pt;
+    margin-bottom: 0;
+    
+}
+
+nav {
+    grid-column: 2/3;
+    text-align: center;
+    align-self: center;
+    word-spacing: 4ch;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: Arial Black, Arial Bold, sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: rgb(11,163,156);
+}
