@@ -107,6 +107,39 @@ a:hover {
     text-align: center;
 }
 
+
+#bottom-image-part {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 300px) 1fr;
+    grid-gap: 25px;
+}
+
+#bottom-wrapper1 {
+    grid-column: 2 / 3;
+}
+
+.main-bottom-images {
+    height: 242px;
+    width: 300px;
+    object-fit: cover;
+    border: 2px solid #1a1a1a;
+    display: block;
+    margin-top: 40px;;
+    padding: 0;
+    opacity: .8;
+}
+
+.main-bottom-images:hover {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.hair-description {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+
 /*Footer Components*/
 
 footer {
