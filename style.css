@@ -66,7 +66,13 @@ a:hover {
 }
 
 #main-title {
-
+    font-family: "Poller One", cursive;
+    font-size: 20px;
+    font-weight: normal;
+    display: inline-block;
+    background-color: white;
+    margin: 0 0 18px;
+    padding: 23px 27px 20px;
 }
 
 .main-text {
@@ -78,6 +84,21 @@ a:hover {
     margin: 7px 0;
     padding: 12px 27px;
     display: inline-block;
+}
+
+#main-link {
+    display: inline-block;
+    color: white;
+    background-color: rgb(11,163,156);
+    font-size: 16px;
+    margin: 15px 0 0;
+    padding: 26px 27px 22px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#main-link:hover {
+    background-color: rgb(31,195,188);
 }
 
 .hair-description {
