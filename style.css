@@ -358,6 +358,7 @@ footer {
     font-size: 35px;
     width: 500px;
     justify-self: center;
+    font-weight: normal;
 
 }
 
@@ -403,6 +404,118 @@ footer {
 }
 
 
+/*BLOG MAIN SETTINGS*/
+
+#blog-main {
+    display: grid;
+    grid-template-columns: 1fr 940px 1fr;
+    justify-content: center;
+    margin: 0 0 30px;
+}
+
+#blog-title {
+    grid-column: 2 / 3;
+    text-align: center;
+    font-family: 'Poller One', cursive;
+    background-color: #252525;
+    display: inline-block;
+    padding: 15px 28px 12px;
+    color: white;
+    font-size: 35px;
+    justify-self: center;
+    font-weight: normal;
+    margin-top: 0;
+
+}
+
+.blog-wrapper {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 375px 940px;
+    border: 2px solid #1a1a1a;
+    margin: 0 0 13px;
+}
+
+.blog-image {
+    height: 295px;
+    width: 375px;
+    object-fit: cover;
+    grid-column: 1 / 2;
+    transition: 0.5s ease-in-out;
+    opacity: 0.8;
+
+}
+
+.blog-a {
+    height: 295px;
+}
+
+.blog-image:hover {
+    opacity: 1;
+}
+
+.blog-sub {
+    grid-column: 2 / 3;
+    height: 295px;
+    width: 560px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.blog-name {
+    text-align: center;
+    color: #252525;
+    font-family: Arial Black, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-paragraph {
+    text-align: center;
+    color: #252525;
+    padding: 30px 30px 18px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.blog-link {
+    text-align: center;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    font-family: Arial Black, sans-serif;
+    font-size: 18px;
+    border: 2px solid black;
+    width: 22%;
+    justify-self: center;
+    padding: 4px 25px;
+    font-weight: normal;
+}
+
+.blog-link:link {
+    color: white;
+}
+
+.blog-link:visited {
+    color: white;
+}
+
+.blog-link:hover {
+    filter: invert(1);
+    border: 2px solid white;
+}
+
+#sunglasses {
+    object-position: 50% 20%;
+}
+
+#dye {
+    object-position: 50% 30%;
+}
 
 /*REACTIVE SETTINGS!*/
 
