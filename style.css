@@ -197,6 +197,63 @@ footer {
 }
 
 
+
+
+/*About Page Settings*/
+
+#about-main {
+    display: grid;
+    grid-template-columns: 1fr 620px 1fr;
+    justify-content: center;
+}
+
+#started {
+    grid-column: 2 / 3;
+    font-family: 'Poller One', cursive;
+    color: white;
+    background-color: #252525;
+    padding: 15px 28px 12px;
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+#about-picture {
+    grid-column: 2 / 3;
+    height: 299px;
+    width: 620px;
+    object-fit: cover;
+    object-position: 50% 23%;
+    border: 2px solid #292929;
+}
+
+.about-subheading {
+    grid-column: 2 / 3;
+    text-align: center;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 3ch;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-paragraph {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin: 0 0 30px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+
 @media (max-width: 576px) {
 
     /*Header Reactive Settings*/
@@ -214,6 +271,22 @@ footer {
 
     .hamburger-links {
         display: none;
+    }
+
+     /*Footer Reactive Settings*/
+
+     footer{
+        grid-template-columns: 1fr;
+    }
+
+    #copyright {
+        grid-column: 1 / 2;
+        justify-self: center;
+    }
+
+    #footer-icons {
+        grid-column: 1 / 2;
+        justify-self: center ;
     }
 
     /*Home Page Reactive Settings*/
@@ -285,19 +358,33 @@ footer {
         margin-bottom: 0;
     }
 
-    /*Footer Reactive Settings*/
 
-    footer{
+
+    /*About Page Reactive Settings*/
+
+    #about-main {
         grid-template-columns: 1fr;
     }
 
-    #copyright {
+    #started, #about-picture, .about-subheading, .about-paragraph {
         grid-column: 1 / 2;
-        justify-self: center;
+        max-width: 500px;
     }
 
-    #footer-icons {
-        grid-column: 1 / 2;
-        justify-self: center ;
+    #started {
+        font-size: 20px;
+        margin: 0;
     }
+
+   #about-picture {
+       justify-self: center;
+       width: 94%;
+       padding: ;
+       max-height: 236px;
+       margin: 24px 0px 30px;
+   }
+
+   .about-subheading {
+       margin-top: 0;;
+   }
 }
