@@ -474,4 +474,51 @@ footer {
    .about-subheading {
        margin-top: 0;;
    }
+
+
+
+/*Gallery Page Reactive Settings*/
+
+#gallery-main {
+    display: grid;
+    justify-content: center;
+}
+
+#gallery-title {
+    font-size: 20px;
+    width: 85%;
+    padding: 3%;
+}
+
+.gallery-picture {
+    max-height: 225px;
+    max-width: 225px;
+    height: auto;
+    width: 98%;
+    border: 2px solid #1a1a1a;
+    opacity: 0.8;
+    justify-self: center;
+}
+
+#gallery-wrapper {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 225px);
+    grid-template-rows: repeat(5, 225px);
+    grid-template-areas:
+    "chess cool"
+    "classic earring"
+    "short look"
+    "beard long"
+    "smile .";
+    margin-bottom: 50px;
+    padding: 5% 0;
+    width: 98%;
+
+
+}
+
+
+
+
 }
