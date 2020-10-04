@@ -589,7 +589,41 @@ footer {
 
 }
 
+/*Gallery Single Post Reactive Settings */
 
+#single-post-main {
+    grid-template-columns: 1fr;
+}
 
+#single-post-title {
+    width: 82%;
+    grid-column: 1 / 2;
+    display: block;
+    padding: 3%;
+    font-size: 20px;
+    justify-self: center;
+}
+
+#single-post-picture {
+    grid-column: 1 / 2;
+    width: 85%;
+    justify-self: center;
+    max-height: 200px;
+
+}
+
+#single-post-sub {
+    grid-column: 1 / 2;
+    font-size: 18px;
+    width: 38%;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+#single-post-paragraph {
+    grid-column: 1/ 2;
+}
 
 }
