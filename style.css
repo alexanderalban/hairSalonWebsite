@@ -253,6 +253,92 @@ footer {
 }
 
 
+/*Gallery Page Settings*/
+
+#gallery-main {
+    display: grid;
+}
+
+#gallery-title {
+    font-family: 'Poller One', cursive;
+    color: white;
+    background-color: #252525;
+    padding: 15px 28px 12px;
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 250px;
+    justify-self: center;
+    
+}
+
+.gallery-picture {
+    height: 300px;
+    width: 300px;
+    border: 2px solid #1a1a1a;
+    opacity: 0.8;
+}
+
+.gallery-picture:hover {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+    
+
+#chess {
+    grid-area: chess;
+}
+
+#cool {
+    grid-area: cool;
+}
+
+#classic {
+    grid-area: classic;
+}
+
+#earring {
+    grid-area: earring;
+}
+
+#short {
+    grid-area: short;
+}
+
+#look {
+    grid-area: look;
+}
+
+#beard {
+    grid-area: beard;
+}
+
+#long {
+    grid-area: long;
+}
+
+#smile {
+    grid-area: smile;
+}
+
+#gallery-wrapper {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:
+    "chess cool classic"
+    "earring short look"
+    "beard long smile";
+    grid-gap: 24px;
+    margin-bottom: 50px;
+
+}
+
+
 
 @media (max-width: 576px) {
 
@@ -374,12 +460,13 @@ footer {
     #started {
         font-size: 20px;
         margin: 0;
+        margin-right: 13px;
+        margin-left: 13px;
     }
 
    #about-picture {
        justify-self: center;
        width: 94%;
-       padding: ;
        max-height: 236px;
        margin: 24px 0px 30px;
    }
