@@ -603,6 +603,73 @@ footer {
     width: 560px;
 }
 
+
+/* CONTACT PAGE SETTINGS */
+#contact-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+
+#contact-title {
+
+    text-align: center;
+    font-family: 'Poller One', cursive;
+    background-color: #252525;
+    display: inline-block;
+    padding: 15px 28px 12px;
+    color: white;
+    font-size: 35px;
+    justify-self: center;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+form {
+    grid-column: 1 / 2;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 24px 0 0;
+    margin-bottom: 65px;
+
+}
+
+#name, #address, #email, #phone, #message {
+    border: 2px solid #252525;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0 0 19px;
+    padding: 20px 10px;
+    text-align: center;
+    color: black;
+    width: 596px;
+}
+
+#message {
+    height: 175px;
+    overflow: auto;
+    resize: none;
+    text-align: center;
+    align-self: start;
+
+
+}
+
+#send {
+    background-color: #252525;
+    color: #fff;
+    font-family: arial black, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    display: inline-block;
+    padding: 20px 28px;
+    width: auto;
+    border: 2px solid #252525;
+    justify-self: center;
+}
+
 /*REACTIVE SETTINGS!*/
 
 @media (max-width: 576px) {
