@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="myscripts.js"></script>
+    <script src="contact.js"></script>
     <title>Buzzed</title>
 </head>
 <body>
@@ -32,11 +33,11 @@
     </header>
     <main id="contact-main">
         <h2 id="contact-title">LET'S KEEP IN TOUCH</h2>
-        <form>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
             <input type="text" id="name" name="name" placeholder="NAME"><br>
             <input type="text" id="address" name="address" placeholder="ADDRESS"><br>
             <input type="email" id="email" name="address" placeholder="EMAIL"><br>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="PHONE NUMBER"><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="PHONE NUMBER"><br>
             <input type="textarea" id="message" name="message" rows="1" cols="50" wrap="physical" placeholder="MESSAGE"><br>
             <input type="submit" name="send" id="send" value="SEND">
         </form>
