@@ -1,11 +1,11 @@
-const hamburgerclick = () => {
-    element=document.getElementById("hamburger-button")
-    if (document.getElementById("hamburger-button").src = "BarberImages/mobile-menu.png))
-    {
+let hamburgerclick = () => {
+    
+    console.log("hello there")
 
-        document.getElementById("hamburger-button").src = "BarberImages/mobile-close.png";
-    }
-    else
+    if (document.getElementById("hamburger-button").src == "./BarberImages/mobile-menu.png")
     {
-        document.getElementById("hamburger-button").src = "BarberImages/mobile-menu.png";
+        document.getElementById("hamburger-button").src = "./BarberImages/mobile-close.png";
     }
+
+    
+}
