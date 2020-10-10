@@ -12,8 +12,8 @@
 <body>
     <header>
         <h1>BUZZED</h1>
-        <nav class="big-nav" onload="whereami()">
-            <a href="index.html" id="currentnav" class="nav-links">HOME</a>
+        <nav class="big-nav">
+            <a href="index.html" id="currentnav" class="nav-links" class="selected">HOME</a>
             <a href="about.html" class="nav-links">ABOUT</a>
             <a href="gallery.html" class="nav-links">GALLERY</a>
             <a href="blog-main.html" class="nav-links">BLOG</a>
@@ -21,14 +21,14 @@
             <a href="contact.html" class="nav-links">CONTACT</a>
         </nav>
         <nav class="hamburger-nav" id="hamburger">
-            <a href="#index.html" class="hamburger-links">HOME</a>
-            <a href="about.html" class="hamburger-links">ABOUT</a>
-            <a href="#blog-main.html" class="hamburger-links">BLOG</a>
-            <a href="#schedule.html" class="hamburger-links">SCHEDULE</a>
-            <a href="contact.html" class="hamburger-links">CONTACT</a>
-              <img src="BarberImages/mobile-menu.png" onclick="hamburgerclick()" id="hamburger-button">
-            </a>
-        </nav>
+            <button class="hamburger-button" onclick="toggleHamburger()"></button>
+            <section id="hamburger-menu">
+                <a href="#index.html" class="hamburger-links">HOME</a>
+                <a href="about.html" class="hamburger-links">ABOUT</a>
+                <a href="blog-main.html" class="hamburger-links">BLOG</a>
+                <a href="schedule.html" class="hamburger-links">SCHEDULE</a>
+                <a href="contact.html" class="hamburger-links">CONTACT</a>
+            </section>
     </header>
     <main id="gallery-main">
         <h2 id="gallery-title">GALLERY</h2>

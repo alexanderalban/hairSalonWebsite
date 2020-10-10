@@ -93,7 +93,7 @@ nav .selected a:visited {
 }
 
 .hamburger-menu {
-    position: absolute;
+    display: grid;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -102,8 +102,9 @@ nav .selected a:visited {
     transition: transform 0.2 ease;
 }
 
-.showMenu {
-    display: inline-block;
+.hamburger-links {
+    display: grid;
+    
 }
 
 /*Main Homepage Components*/
@@ -790,6 +791,10 @@ td {
     }
     .hamburger-nav {
         display: inline-block;
+    }
+
+    .hamburger-menu {
+        display: none;
     }
 
      /*Footer Reactive Settings*/
