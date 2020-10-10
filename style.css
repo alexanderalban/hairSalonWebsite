@@ -55,6 +55,57 @@ nav .selected a:visited {
     color: rgb(11,163,156);
 }
 
+
+/* HAMBURGER BUTTON */
+
+.hamburger-nav {
+    display: none;
+    grid-column: 2 / 3;
+    text-align: center;
+    align-self: center;
+    overflow: hidden;
+    color: white;
+}
+
+.hamburger-button {
+    position: absolute;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("./BarberImages/mobile-menu.png");
+    background-size: 100%;
+}
+
+
+.hamburger-close {
+    position: absolute;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: 100%;
+    background-image: url("./BarberImages/mobile-close.png")
+}
+
+.hamburger-menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    display: none;
+    transition: transform 0.2 ease;
+}
+
+.showMenu {
+    display: inline-block;
+}
+
 /*Main Homepage Components*/
 
 #main-stretchy {
@@ -199,13 +250,6 @@ footer {
 
 
 /*Hamburger Button Settings*/
-
-.hamburger-nav {
-    display: none;
-    grid-column: 2 / 3;
-    text-align: center;
-    align-self: center;
-}
 
 
 
@@ -730,12 +774,6 @@ td {
 }
 
 
-/* HAMBURGER BUTTON */
-
-
-
-
-
 
 /*REACTIVE SETTINGS!*/
 
@@ -752,10 +790,6 @@ td {
     }
     .hamburger-nav {
         display: inline-block;
-    }
-
-    .hamburger-links {
-        display: none;
     }
 
      /*Footer Reactive Settings*/
