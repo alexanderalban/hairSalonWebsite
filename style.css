@@ -344,13 +344,13 @@ footer {
     display: inline-block;
     margin-left: 40px;
     margin-right: 40px;
-    width: 250px;
+    max-width: 250px;
     justify-self: center;
 }
 
 .gallery-picture {
-    height: 300px;
-    width: 300px;
+    max-height: 300px;
+    max-width: 300px;
     border: 2px solid #1a1a1a;
     opacity: 0.8;
     transition: 0.5s ease-in-out
@@ -400,8 +400,8 @@ footer {
 #gallery-wrapper {
     justify-self: center;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
     "chess cool classic"
     "earring short look"
