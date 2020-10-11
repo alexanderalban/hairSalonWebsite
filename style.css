@@ -22,7 +22,7 @@ h1 {
     transition: 1s, ease;
     animation: fadeInDown;
     animation-duration: 1s;
-    } 
+} 
     
 
 
@@ -66,7 +66,7 @@ a#currentnav:visited {
 }
 
 
-/* HAMBURGER BUTTON */
+/* Hamburger Button */
 
 .hamburger-nav {
     display: none;
@@ -188,14 +188,13 @@ a#currentburg {
     padding: 26px 27px 22px;
     font-family: Arial, Helvetica, sans-serif;
     transition: .5s ease-in-out;
-
 }
 
 #main-link:hover {
     background-color: rgb(31,195,188);
 }
 
-/*Bottom Main Homepage Section*/
+/*Bottom-Main Homepage Section*/
 
 .hair-description {
     font-family: 'Poller One', cursive;
@@ -258,7 +257,6 @@ footer {
     grid-column: 3 / 4;
     justify-self: end;
     align-self: center;
-    
 }
 
 .social-icons {
@@ -296,7 +294,6 @@ footer {
     display: inline-block;
     margin-left: 40px;
     margin-right: 40px;
-
 }
 
 #about-picture {
@@ -349,7 +346,6 @@ footer {
     margin-right: 40px;
     width: 250px;
     justify-self: center;
-    
 }
 
 .gallery-picture {
@@ -412,11 +408,10 @@ footer {
     "beard long smile";
     grid-gap: 24px;
     margin-bottom: 50px;
-
 }
 
 
-/*Gallery Single Post Page Settings*/
+/*Gallery Single-Post Page Settings*/
 
 #single-post-main {
     display: grid;
@@ -436,7 +431,6 @@ footer {
     width: 500px;
     justify-self: center;
     font-weight: normal;
-
 }
 
 #single-post-picture {
@@ -477,11 +471,10 @@ footer {
     font-size: 14px;
     margin-left: 40px;
     margin-right: 40px;
-
 }
 
 
-/*BLOG MAIN SETTINGS*/
+/*Blog-Main Settings*/
 
 #blog-main {
     display: grid;
@@ -502,7 +495,6 @@ footer {
     justify-self: center;
     font-weight: normal;
     margin-top: 0;
-
 }
 
 .blog-wrapper {
@@ -521,7 +513,6 @@ footer {
     transition: 0.5s ease-in-out;
     opacity: 0.8;
     border-right: 2px solid black;
-
 }
 
 .blog-a {
@@ -572,6 +563,7 @@ footer {
     justify-self: center;
     padding: 4px 25px;
     font-weight: normal;
+    transition: .5s ease-in-out;
 }
 
 .blog-link:link {
@@ -597,7 +589,7 @@ footer {
 
 
 
-/* Blog Single Post Settings! */
+/* Blog Single-Post Settings! */
 
 #blog-single-main {
     display: grid;
@@ -672,7 +664,7 @@ footer {
 }
 
 
-/* CONTACT PAGE SETTINGS */
+/* Contact Page Settings */
 #contact-main {
     display: grid;
     grid-template-columns: 1fr;
@@ -681,7 +673,6 @@ footer {
 
 
 #contact-title {
-
     text-align: center;
     font-family: 'Poller One', cursive;
     background-color: #252525;
@@ -702,7 +693,6 @@ form {
     margin: 0 auto;
     padding: 24px 0 0;
     margin-bottom: 65px;
-
 }
 
 #name, #address, #email, #phone, #message {
@@ -721,8 +711,6 @@ form {
     overflow: auto;
     resize: none;
     align-self: start;
-
-
 }
 
 #send {
@@ -752,6 +740,35 @@ form {
     position: relative;
 }
 
+/* Results Page Settings */
+
+#results-wrapper {
+    display: grid;
+}
+
+#results {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#go-back-button {
+    justify-self: center;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-size: 25px;
+    background-color: #252525;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: .5s ease-in-out;
+}
+
+#go-back-button:hover {
+    background-color: rgb(11,163,156);
+}
+
 
 /* Schedule Page Settings */
 
@@ -762,20 +779,17 @@ form {
 }
 
 #schedule-title {
-
-text-align: center;
-font-family: 'Poller One', cursive;
-background-color: #252525;
-display: inline-block;
-padding: 15px 28px 12px;
-color: white;
-font-size: 35px;
-justify-self: center;
-font-weight: normal;
-margin-top: 0;
-margin-bottom: 20px;
-
-
+    text-align: center;
+    font-family: 'Poller One', cursive;
+    background-color: #252525;
+    display: inline-block;
+    padding: 15px 28px 12px;
+    color: white;
+    font-size: 35px;
+    justify-self: center;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 
@@ -810,6 +824,3 @@ th {
 td {
     padding: 10px;
 }
-
-
-
