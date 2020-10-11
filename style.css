@@ -478,7 +478,7 @@ footer {
 
 #blog-main {
     display: grid;
-    grid-template-columns: 1fr 940px 1fr;
+    grid-template-columns: 1fr minmax(600px, 940px) 1fr;
     justify-content: center;
     margin: 0 0 30px;
 }
@@ -500,7 +500,7 @@ footer {
 .blog-wrapper {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 375px 940px;
+    grid-template-columns: 375px minmax(600px, 940px);
     border: 2px solid #1a1a1a;
     margin: 0 0 13px;
 }
@@ -516,7 +516,7 @@ footer {
 }
 
 .blog-a {
-    height: 295px;
+    max-height: 295px;
 }
 
 .blog-image:hover {
@@ -525,8 +525,8 @@ footer {
 
 .blog-sub {
     grid-column: 2 / 3;
-    height: 295px;
-    width: 560px;
+    max-height: 295px;
+    max-width: 560px;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -559,7 +559,7 @@ footer {
     font-family: Arial Black, sans-serif;
     font-size: 18px;
     border: 2px solid black;
-    width: 22%;
+    max-width: 22%;
     justify-self: center;
     padding: 4px 25px;
     font-weight: normal;
