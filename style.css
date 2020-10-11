@@ -34,6 +34,11 @@ h1 {
     white-space: nowrap;
     font-size: 14px;
     font-family: Arial Black, Arial Bold, sans-serif;
+    transition: .5s ease-in-out;
+}
+
+.nav-links {
+    transition: .2s ease-in-out;
 }
 
 a.nav-links:link {
@@ -70,6 +75,7 @@ a#currentnav:visited {
     align-self: center;
     overflow: hidden;
     color: white;
+    transition: .3s ease-in-out;
 }
 
 .hamburger-button {
@@ -83,6 +89,7 @@ a#currentnav:visited {
     background-image: url("./BarberImages/mobile-menu.png");
     background-size: 100%;
     margin-bottom: 25px;
+    transition: .3s ease-in-out;
 }
 
 .hamburger-menu {
@@ -93,6 +100,8 @@ a#currentnav:visited {
     position: absolute;
     margin-top: 1px;
     display: grid;
+    transition: .3s ease-in-out;
+
 }
 
 .hamburger-links {
@@ -111,6 +120,7 @@ a#currentnav:visited {
     opacity: .9;
     margin-top: 1px;
     align-self: end;
+    transition: .3s ease-in-out;
 }
 
 a.hamburger-links:hover {
@@ -171,11 +181,13 @@ a#currentburg {
 #main-link {
     display: inline-block;
     color: white;
+    text-decoration: none;
     background-color: rgb(11,163,156);
     font-size: 16px;
     margin: 15px 0 0;
     padding: 26px 27px 22px;
     font-family: Arial, Helvetica, sans-serif;
+    transition: .5s ease-in-out;
 
 }
 
@@ -256,6 +268,7 @@ footer {
     filter: invert(1);
     border: 3px solid black;
     margin-left: 15px;
+    transition: .2s ease-in-out;
 }
 
 .social-icons:hover {
@@ -582,6 +595,8 @@ footer {
     object-position: 50% 30%;
 }
 
+
+
 /* Blog Single Post Settings! */
 
 #blog-single-main {
@@ -721,6 +736,12 @@ form {
     width: auto;
     border: 2px solid #252525;
     justify-self: center;
+    transition: .5s ease-in-out;
+}
+
+#send:hover {
+    border: 2px solid rgb(11,163,156);
+    background-color: rgb(11,163,156);
 }
 
 .contact-background {
