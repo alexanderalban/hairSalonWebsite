@@ -18,8 +18,13 @@ h1 {
     align-self: end;
     font-size: 50pt;
     margin-bottom: 0;
+    font-family: 'Kaushan Script', cursive;
+    transition: 1s, ease;
+    animation: fadeInDown;
+    animation-duration: 1s;
+    } 
     
-}
+
 
 .big-nav {
     grid-column: 2/3;
