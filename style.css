@@ -6,7 +6,7 @@ body {
 /*Header Components*/
 
 header {
-    height: 260px;
+    min-height: 260px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     display:grid;
@@ -68,7 +68,7 @@ nav .selected a:visited {
 }
 
 .hamburger-button {
-    position: absolute;
+    position: sticky;
     z-index: 1000;
     width: 50px;
     height: 50px;
@@ -77,34 +77,34 @@ nav .selected a:visited {
     background-color: transparent;
     background-image: url("./BarberImages/mobile-menu.png");
     background-size: 100%;
-}
-
-
-.hamburger-close {
-    position: absolute;
-    z-index: 1000;
-    width: 50px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    background-size: 100%;
-    background-image: url("./BarberImages/mobile-close.png")
+    margin-bottom: 25px;
 }
 
 .hamburger-menu {
+    border: 1px solid #fff;
+    padding: 0;
+    width: 90%;
+    z-index: 1001;
+    position: absolute;
+    margin-top: 1px;
     display: grid;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    color: white;
-    display: none;
-    transition: transform 0.2 ease;
 }
 
 .hamburger-links {
     display: grid;
-    
+    background-color: grey;
+    color: white;
+    max-width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 49px;
+    padding: 0 15px;
+    text-align: left;
+    z-index: 1000;
+    border: 1px solid white;
+    opacity: .85;
+    margin-top: 5px;
+    align-self: end;
 }
 
 /*Main Homepage Components*/
