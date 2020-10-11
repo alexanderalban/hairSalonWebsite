@@ -83,7 +83,7 @@ a#currentnav:visited {
 .hamburger-menu {
     border: 1px solid #fff;
     padding: 0;
-    width: 90%;
+    width: 100%;
     z-index: 1001;
     position: absolute;
     margin-top: 1px;
@@ -95,7 +95,7 @@ a#currentnav:visited {
     background-color: rgb(14,151,145);
     color: white;
     text-decoration: none;
-    max-width: 90%;
+    max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 49px;
