@@ -678,7 +678,7 @@ footer {
     justify-self: center;
     font-weight: normal;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 form {
@@ -722,6 +722,14 @@ form {
     width: auto;
     border: 2px solid #252525;
     justify-self: center;
+}
+
+.contact-background {
+    background-image: url(./BarberImages/mahir-uysal-gK6b8RQUR6k-unsplash.jpg);
+    background-position: 1%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 
